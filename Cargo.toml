@@ -1,0 +1,6 @@
+[package]
+name = "iron_diesel"
+version = "0.1.0"
+authors = ["Marco A <marco.soulg@gmail.com>"]
+
+[dependencies]
