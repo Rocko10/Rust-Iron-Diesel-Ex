@@ -2,6 +2,9 @@
 #[macro_use] extern crate diesel_codegen;
 extern crate dotenv;
 
+pub mod schema;
+pub mod models;
+
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
 use dotenv::dotenv;
@@ -11,7 +14,7 @@ pub fn db_connection() -> PgConnection {
 
     dotenv().ok();
 
-    let database_url = env::var("DATABSE_URL")
+    let database_url = env::var("DATABASE_URL")
     .expect("DATABSE_URL must be set");
 
     PgConnection::establish(&database_url)

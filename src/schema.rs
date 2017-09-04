@@ -1,1 +1,1 @@
-infer_schema!("dotenv:DATABSE_URL");
+infer_schema!("dotenv:DATABASE_URL");
